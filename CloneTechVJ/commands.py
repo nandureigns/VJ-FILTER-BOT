@@ -35,11 +35,13 @@ async def start(client, message):
         await clonedb.add_user(me.id, message.from_user.id)
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{me.username}?startgroup=true')
-        ],[
-            InlineKeyboardButton('🕵️ ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('🔍 ᴀʙᴏᴜᴛ', callback_data='about')
-        ]]
+            InlineKeyboardButton("➕️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ ➕", url=f"http://t.me/{temp.U_NAME}?startgroup=true"),
+            ],[
+            InlineKeyboardButton("🔎 Sᴇᴀʀᴄʜ", switch_inline_query_current_chat='') 
+            ],[
+            InlineKeyboardButton("Hᴇʟᴩ 🕸️", callback_data="help"),
+            InlineKeyboardButton("Aʙᴏᴜᴛ ✨", callback_data="about")
+         ]]
         if cd["update_channel_link"] != None:
             up = cd["update_channel_link"]
             buttons.append([InlineKeyboardButton('🍿 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ 🍿', url=up)])
