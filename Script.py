@@ -244,7 +244,7 @@ Nᴀᴍᴇ - {}"""
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b>@KnMoviez {file_name}</b>
+    CUSTOM_FILE_CAPTION = """<b>@KnMoviez {file_name}</b>
 
 <b>sɪᴢᴇ : {file_size}</b>""" 
 
